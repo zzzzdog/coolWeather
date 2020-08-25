@@ -1,12 +1,12 @@
 package com.coolweather.android.db;
 
+import org.litepal.annotation.Column;
 import org.litepal.crud.LitePalSupport;
 
 public class Province extends LitePalSupport {
     private int id;
     private String provinceName;
-    private int provinceId;
-
+    private int provinceCode;
     public int getId() {
         return id;
     }
@@ -23,11 +23,11 @@ public class Province extends LitePalSupport {
         this.provinceName = provinceName;
     }
 
-    public int getProvinceId() {
-        return provinceId;
+    public int getProvinceCode() {
+        return provinceCode;
     }
 
-    public void setProvinceId(int provinceId) {
-        this.provinceId = provinceId;
+    public void setProvinceCode(int provinceCode) {
+        this.provinceCode = provinceCode;
     }
 }
